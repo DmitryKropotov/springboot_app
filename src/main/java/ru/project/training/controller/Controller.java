@@ -1,4 +1,4 @@
-package ru.sbrf.stb_back.controller;
+package ru.project.training.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

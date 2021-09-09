@@ -1,0 +1,37 @@
+Configuration:
+  status: INFO
+  name: Default
+
+  Appenders:
+
+    Console:
+      name: Console
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "%m%n"
+
+    RollingFile:
+      #      File:
+      name: logFile4FPJ
+      filename: C:\Data\IdeaProjects\logFile4FPJ.log
+      filePattern: logFile4FPJ.log
+      Policies:
+        SizeBasedTriggeringPolicy:
+          size: 100MB
+        PatternLayout:
+          pattern: "%m%n"
+
+  Loggers:
+
+    logger:
+      level: info
+      name: ru.project.training.SpringBootTraining
+      AppenderRef:
+        - ref: Console
+        - ref: logFile4FPJ
+
+    Root:
+      level: info
+      #AppenderRef:
+      #  - ref: Console
+#        - ref: logFile4FPJ

@@ -1,11 +1,11 @@
-package ru.sbrf.stb_back;
+package ru.project.training;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StbBackApplication {
+public class SpringBootTraining {
         public static void main(String[] args) {
-                SpringApplication.run(StbBackApplication.class);
+                SpringApplication.run(SpringBootTraining.class);
         }
 }
