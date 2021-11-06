@@ -1,25 +1,25 @@
-Configuration:
-  status: INFO
-  name: Default
+#Configuration:
+#  status: INFO
+#  name: Default
 
-  Appenders:
+#  Appenders:
 
-    Console:
-      name: Console
-      target: SYSTEM_OUT
-      PatternLayout:
-        pattern: "%m%n"
+#    Console:
+#      name: Console
+ #     target: SYSTEM_OUT
+ #     PatternLayout:
+#      pattern: "%m%n"
 
-    RollingFile:
+#    RollingFile:
       #      File:
-      name: logFile4FPJ
-      filename: C:\Data\IdeaProjects\logFile4FPJ.log
-      filePattern: logFile4FPJ.log
-      Policies:
-        SizeBasedTriggeringPolicy:
-          size: 100MB
-        PatternLayout:
-          pattern: "%m%n"
+#      name: logFile4FPJ
+#      filename: logFile4FPJ.log
+#      filePattern: logFile4FPJ.log
+#      Policies:
+#        SizeBasedTriggeringPolicy:
+#          size: 100MB
+#       PatternLayout:
+#          pattern: "%m%n"
 
   Loggers:
 

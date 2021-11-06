@@ -1,12 +1,12 @@
-server:
-  servlet:
-    context-path: /stb_back
-  error:
-    whitelabel:
-      enabled: false
-  port: 8080
-spring:
-  thymeleaf:
-    enabled: true
-  main:
-    lazy-initialization: true
+#server:
+#  servlet:
+#    context-path: /springboot_app
+#  error:
+#    whitelabel:
+#      enabled: true
+#  port: 8787
+#spring:
+#  thymeleaf:
+#    enabled: true
+#  main:
+#    lazy-initialization: true

@@ -6,6 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBootTraining {
         public static void main(String[] args) {
-                SpringApplication.run(SpringBootTraining.class);
+                try {
+                    SpringApplication.run(SpringBootTraining.class);
+                } catch (Throwable e) {
+                    System.out.println(e);
+                }
         }
 }

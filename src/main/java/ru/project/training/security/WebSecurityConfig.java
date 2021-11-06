@@ -1,4 +1,4 @@
-package ru.project.training.security;
+/*ackage ru.project.training.security;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -35,9 +35,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         @Override
         public void configure(WebSecurity web) throws Exception {
         /*web.ignoring().antMatchers("/actuator/**");
-        super.configure(web);*/
+        super.configure(web);*
         }
 
         @Override
         protected void configure(AuthenticationManagerBuilder auth) throws Exception {}
-}
+}*/
