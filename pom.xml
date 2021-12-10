@@ -13,21 +13,35 @@
     </properties>
 
     <dependencies>
-        <!--without it package org.springframework.boot does not exist-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.4.4</version>
-        </dependency>
         <!-- without it
-       Whitelabel Error Page
+      Whitelabel Error Page
 This application has no explicit mapping for /error, so you are seeing this as a fallback.
 
 Sat Nov 13 21:24:43 MSK 2021
 There was an unexpected error (type=Not Found, status=404).-->
+        <!--It downloads many org.springframework jars-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
+            <version>2.4.4</version>
+        </dependency>
+        <!--it is needed for GroupedOpenApi-->
+        <!--It downloads many org.springframework jars, too-->
+        <dependency><!--io.swagger.v3.oas-->
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+        <!--dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
+        </dependency-->
+        <!--without it package org.springframework.boot does not exist-->
+        <!--org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: ...-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
             <version>2.4.4</version>
         </dependency>
         <!--dependency>
@@ -109,17 +123,6 @@ There was an unexpected error (type=Not Found, status=404).-->
             <artifactId>log4j-web</artifactId>
             <version>2.14.0</version>
         </dependency-->
-        <!--it is needed for springboot-->
-        <!--dependency><-io.swagger.v3.oas->
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.5.0</version>
-        </dependency-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.18</version>
-        </dependency>
 
         <!--activate jpa repositories-->
         <!--dependency>
@@ -143,7 +146,7 @@ There was an unexpected error (type=Not Found, status=404).-->
         </dependency-->
 
     </dependencies>
-    <build>
+    <!--build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -168,5 +171,5 @@ There was an unexpected error (type=Not Found, status=404).-->
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build-->
 </project>

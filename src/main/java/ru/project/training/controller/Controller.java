@@ -1,4 +1,4 @@
-/*package ru.project.training.controller;
+package ru.project.training.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,4 +17,4 @@ public class Controller {
                 log.info("controller control");
                 return  0;
         }
-}*/
+}
