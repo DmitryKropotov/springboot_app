@@ -32,11 +32,11 @@ There was an unexpected error (type=Not Found, status=404).-->
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.5.0</version>
         </dependency>
-        <!--dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.18</version>
-        </dependency-->
+        </dependency>
         <!--without it package org.springframework.boot does not exist-->
         <!--org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: ...-->
         <dependency>

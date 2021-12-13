@@ -8,5 +8,60 @@ server:
 spring:
   thymeleaf:
     enabled: true
-  main:
-    lazy-initialization: true
+    main:
+      lazy-initialization: true
+  config:
+    activate:
+      on-profile: test
+name: test-YAML
+environment: testing
+enabled: false
+servers:
+  - www.abc.test.com
+  - www.xyz.test.com
+
+---
+server:
+  servlet:
+    context-path: /springboot_app
+  error:
+    whitelabel:
+      enabled: true
+  port: 8787
+spring:
+  thymeleaf:
+    enabled: true
+    main:
+      lazy-initialization: true
+  config:
+    activate:
+      on-profile: prod
+name: prod-YAML
+environment: production
+enabled: true
+servers:
+  - www.abc.com
+  - www.xyz.com
+
+---
+server:
+   servlet:
+        context-path: /springboot_app
+   error:
+        whitelabel:
+          enabled: true
+   port: 8787
+spring:
+   thymeleaf:
+        enabled: true
+        main:
+          lazy-initialization: true
+   config:
+     activate:
+       on-profile: default
+name: default-YAML
+environment: default
+enabled: true
+servers:
+      - www.abc.default.com
+      - www.xyz.default.com
