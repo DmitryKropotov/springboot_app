@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /springboot_app
+  error:
+    whitelabel:
+      enabled: true
+  port: 8787
+

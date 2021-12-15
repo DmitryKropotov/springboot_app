@@ -1,10 +1,3 @@
-server:
-  servlet:
-    context-path: /springboot_app
-  error:
-    whitelabel:
-      enabled: true
-  port: 8787
 spring:
   thymeleaf:
     enabled: true
@@ -19,15 +12,7 @@ enabled: false
 servers:
   - www.abc.test.com
   - www.xyz.test.com
-
 ---
-server:
-  servlet:
-    context-path: /springboot_app
-  error:
-    whitelabel:
-      enabled: true
-  port: 8787
 spring:
   thymeleaf:
     enabled: true
@@ -42,20 +27,12 @@ enabled: true
 servers:
   - www.abc.com
   - www.xyz.com
-
 ---
-server:
-   servlet:
-        context-path: /springboot_app
-   error:
-        whitelabel:
-          enabled: true
-   port: 8787
 spring:
    thymeleaf:
-        enabled: true
-        main:
-          lazy-initialization: true
+     enabled: true
+     main:
+       lazy-initialization: true
    config:
      activate:
        on-profile: default
