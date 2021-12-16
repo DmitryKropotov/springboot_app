@@ -12,6 +12,20 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
     <dependencies>
         <!-- without it
       Whitelabel Error Page
@@ -27,7 +41,7 @@ There was an unexpected error (type=Not Found, status=404).-->
         </dependency>
         <!--it is needed for GroupedOpenApi-->
         <!--It downloads many org.springframework jars, too-->
-        <dependency><!--io.swagger.v3.oas-->
+        <dependency><!---io.swagger.v3.oas-->
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.5.0</version>
@@ -36,13 +50,6 @@ There was an unexpected error (type=Not Found, status=404).-->
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.18</version>
-        </dependency>
-        <!--without it package org.springframework.boot does not exist-->
-        <!--org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerWelcome' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: ...-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.4.4</version>
         </dependency>
         <!--activate jpa repositories-->
         <dependency>
@@ -54,6 +61,11 @@ There was an unexpected error (type=Not Found, status=404).-->
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.200</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
         </dependency>
         <!--dependency>
             <groupId>org.springframework.boot</groupId>

@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Student extends Auditable<String> {
     @Id
     @Column(name = "id")
     private Integer id;
