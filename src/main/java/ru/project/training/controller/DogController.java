@@ -32,7 +32,7 @@ public class DogController {
             summary = "method to save a dog",
             description = "method to save a dog",
             requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
-                    description = "student", required = true, content = @Content(schema = @Schema(implementation = Dog.class))
+                    description = "dog", required = true, content = @Content(schema = @Schema(implementation = Dog.class))
             ),
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",

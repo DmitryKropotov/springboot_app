@@ -28,4 +28,52 @@ public class SwaggerConfiguration {
                 .build();
     }
 
+    @Bean
+    public GroupedOpenApi publicMersedesApi() {
+        return GroupedOpenApi.builder()
+                .group("Mersedes")
+                .pathsToMatch("/mersedes/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicBmwApi() {
+        return GroupedOpenApi.builder()
+                .group("Bmw")
+                .pathsToMatch("/bmw/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicSchoolSubjectApi() {
+        return GroupedOpenApi.builder()
+                .group("SchoolSubject")
+                .pathsToMatch("/schoolSubject/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicUniversitySubjectApi() {
+        return GroupedOpenApi.builder()
+                .group("UniversitySubject")
+                .pathsToMatch("/universitySubject/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicEcologicalTransportApi() {
+        return GroupedOpenApi.builder()
+                .group("EcologicalTransport")
+                .pathsToMatch("/ecologicalSubject/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicPollutingTransportApi() {
+        return GroupedOpenApi.builder()
+                .group("PollutingTransport")
+                .pathsToMatch("/pollutingSubject/**")
+                .build();
+    }
+
 }

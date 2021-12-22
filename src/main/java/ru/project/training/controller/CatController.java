@@ -30,7 +30,7 @@ public class CatController {
             summary = "method to save a cat",
             description = "method to save a cat",
             requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
-                    description = "student", required = true, content = @Content(schema = @Schema(implementation = Cat.class))
+                    description = "cat", required = true, content = @Content(schema = @Schema(implementation = Cat.class))
             ),
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",
@@ -38,7 +38,7 @@ public class CatController {
                     )
             }
     )
-    public Cat saveStudent(@RequestBody Cat cat) {
+    public Cat saveCat(@RequestBody Cat cat) {
         return catService.save(cat);
     }
 
