@@ -34,7 +34,7 @@ public class PollutingTransportController {
             ),
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",
-                            content = @Content(schema = @Schema(implementation = Cat.class))
+                            content = @Content(schema = @Schema(implementation = PollutingTransport.class))
                     )
             }
     )
@@ -52,7 +52,7 @@ public class PollutingTransportController {
                     )
             }
     )
-    public List<PollutingTransport> findAllCats() {
+    public List<PollutingTransport> findAllPollutingTransport() {
         return transportService.findAll();
     }
 }

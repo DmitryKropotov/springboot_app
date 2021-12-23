@@ -64,7 +64,7 @@ public class SwaggerConfiguration {
     public GroupedOpenApi publicEcologicalTransportApi() {
         return GroupedOpenApi.builder()
                 .group("EcologicalTransport")
-                .pathsToMatch("/ecologicalSubject/**")
+                .pathsToMatch("/ecologicalTransport/**")
                 .build();
     }
 
@@ -72,7 +72,15 @@ public class SwaggerConfiguration {
     public GroupedOpenApi publicPollutingTransportApi() {
         return GroupedOpenApi.builder()
                 .group("PollutingTransport")
-                .pathsToMatch("/pollutingSubject/**")
+                .pathsToMatch("/pollutingTransport/**")
+                .build();
+    }
+
+    @Bean
+    public GroupedOpenApi publicTransportApi() {
+        return GroupedOpenApi.builder()
+                .group("Transport")
+                .pathsToMatch("/pollutingTransport/**")
                 .build();
     }
 
