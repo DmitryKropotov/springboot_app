@@ -84,4 +84,12 @@ public class SwaggerConfiguration {
                 .build();
     }
 
+    @Bean
+    public GroupedOpenApi publicFoodApi() {
+        return GroupedOpenApi.builder()
+                .group("Food")
+                .pathsToMatch("/food/**")
+                .build();
+    }
+
 }

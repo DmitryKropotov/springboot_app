@@ -13,6 +13,6 @@ import javax.persistence.*;
 @Setter
 public class Animal {
     @Id
-    int id;
-    String name;
+    private int id;
+    private String name;
 }
