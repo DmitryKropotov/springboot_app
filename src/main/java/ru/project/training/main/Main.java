@@ -1,5 +1,6 @@
 package ru.project.training.main;
 
+import lombok.SneakyThrows;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -8,11 +9,13 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import ru.project.training.entity.Animal;
 import ru.project.training.entity.Cat;
+import ru.project.training.java11.RequestMaker;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
 public class Main {
+    @SneakyThrows
     public static void main(String[] args) throws URISyntaxException {
         var x = 10;
         var y  = 2L;
@@ -33,8 +36,8 @@ public class Main {
         ResponseEntity answer = null;
         answer = restTemplate.exchange(new URI("https://www.google.com/"), HttpMethod.GET, entity, String.class);
 
-
-        System.out.println(answer.getBody());
+        RequestMaker requestMaker = new RequestMaker();
+        requestMaker.makeMultipleImageDownload();
 
     }
 }
