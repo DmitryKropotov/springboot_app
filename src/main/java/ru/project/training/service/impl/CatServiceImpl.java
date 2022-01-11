@@ -2,7 +2,7 @@ package ru.project.training.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.project.training.entity.Cat;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Cat;
 import ru.project.training.repository.CatRepository;
 import ru.project.training.service.CatService;
 

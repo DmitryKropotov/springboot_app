@@ -8,14 +8,13 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.project.training.entity.Cat;
-import ru.project.training.entity.transport.PollutingTransport;
+import ru.project.training.entity.transportInheritanceTablePerClass.PollutingTransport;
 import ru.project.training.service.transport.TransportService;
 
 import java.util.List;
 
 @RestController
-@Tag(name = "pollutingTransportController", description = "RestController for work with polluting transport")
+@Tag(name = "pollutingTransportController", description = "RestController for work with polluting transportInheritanceTablePerClass")
 @RequestMapping("/pollutingTransport")
 public class PollutingTransportController {
     private TransportService<PollutingTransport> transportService;
@@ -44,8 +43,8 @@ public class PollutingTransportController {
 
     @GetMapping("/findPollutingTransport")
     @Operation(
-            summary = "method to get polluting transport",
-            description = "method to get polluting transport",
+            summary = "method to get polluting transportInheritanceTablePerClass",
+            description = "method to get polluting transportInheritanceTablePerClass",
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",
                             content = @Content(array = @ArraySchema(schema = @Schema(implementation = PollutingTransport.class)))

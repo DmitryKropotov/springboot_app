@@ -13,6 +13,14 @@ public class SwaggerConfiguration {
     }
 
     @Bean
+    public GroupedOpenApi publicAnimalsApi() {
+        return GroupedOpenApi.builder()
+                .group("Animals")
+                .pathsToMatch("/animals/**")
+                .build();
+    }
+
+    @Bean
     public GroupedOpenApi publicDogsApi() {
         return GroupedOpenApi.builder()
                 .group("Dogs")

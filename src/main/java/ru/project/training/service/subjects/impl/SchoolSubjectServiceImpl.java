@@ -2,7 +2,7 @@ package ru.project.training.service.subjects.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.project.training.entity.subjects.SchoolSubject;
+import ru.project.training.entity.subjectsInheritanceTypeJoined.SchoolSubject;
 import ru.project.training.repository.subjects.SchoolSubjectRepository;
 import ru.project.training.service.subjects.SchoolSubjectService;
 

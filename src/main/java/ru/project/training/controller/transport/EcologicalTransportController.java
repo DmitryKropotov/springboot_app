@@ -8,13 +8,13 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.project.training.entity.transport.EcologicalTransport;
+import ru.project.training.entity.transportInheritanceTablePerClass.EcologicalTransport;
 import ru.project.training.service.transport.TransportService;
 
 import java.util.List;
 
 @RestController
-@Tag(name = "ecologicalTransportController", description = "RestController for work with ecological transport")
+@Tag(name = "ecologicalTransportController", description = "RestController for work with ecological transportInheritanceTablePerClass")
 @RequestMapping("/ecologicalTransport")
 public class EcologicalTransportController {
     private TransportService<EcologicalTransport> transportService;

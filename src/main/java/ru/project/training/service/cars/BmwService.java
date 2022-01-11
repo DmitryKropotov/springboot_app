@@ -1,6 +1,6 @@
 package ru.project.training.service.cars;
 
-import ru.project.training.entity.cars.Bmw;
+import ru.project.training.entity.carsMappedSuperClass.Bmw;
 
 import java.util.List;
 

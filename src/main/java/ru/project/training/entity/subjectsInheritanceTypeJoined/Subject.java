@@ -1,4 +1,4 @@
-package ru.project.training.entity.subjects;
+package ru.project.training.entity.subjectsInheritanceTypeJoined;
 
 import lombok.Getter;
 import lombok.Setter;

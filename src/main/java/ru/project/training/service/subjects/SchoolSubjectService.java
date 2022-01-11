@@ -1,6 +1,6 @@
 package ru.project.training.service.subjects;
 
-import ru.project.training.entity.subjects.SchoolSubject;
+import ru.project.training.entity.subjectsInheritanceTypeJoined.SchoolSubject;
 
 import java.util.List;
 

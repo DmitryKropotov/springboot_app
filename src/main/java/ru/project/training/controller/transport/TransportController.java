@@ -8,13 +8,13 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.project.training.entity.transport.Transport;
+import ru.project.training.entity.transportInheritanceTablePerClass.Transport;
 import ru.project.training.service.transport.TransportService;
 
 import java.util.List;
 
 @RestController
-@Tag(name = "transportController", description = "RestController for work with transport")
+@Tag(name = "transportController", description = "RestController for work with transportInheritanceTablePerClass")
 @RequestMapping("/transport")
 public class TransportController {
     private TransportService<Transport> transportService;
@@ -27,9 +27,9 @@ public class TransportController {
     @PostMapping("/saveTransport")
     @Operation(
             summary = "method to save a Transport",
-            description = "method to save a transport",
+            description = "method to save a transportInheritanceTablePerClass",
             requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(
-                    description = "transport", required = true, content = @Content(schema = @Schema(implementation = Transport.class))
+                    description = "transportInheritanceTablePerClass", required = true, content = @Content(schema = @Schema(implementation = Transport.class))
             ),
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",
@@ -43,8 +43,8 @@ public class TransportController {
 
     @GetMapping("/findTransport")
     @Operation(
-            summary = "method to get transport",
-            description = "method to get transport",
+            summary = "method to get transportInheritanceTablePerClass",
+            description = "method to get transportInheritanceTablePerClass",
             responses = {
                     @ApiResponse(description = "OK", responseCode = "200",
                             content = @Content(array = @ArraySchema(schema = @Schema(implementation = Transport.class)))

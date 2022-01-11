@@ -2,7 +2,7 @@ package ru.project.training.service.cars.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.project.training.entity.cars.Mersedes;
+import ru.project.training.entity.carsMappedSuperClass.Mersedes;
 import ru.project.training.repository.cars.MersedesRepository;
 import ru.project.training.service.cars.MersedesService;
 

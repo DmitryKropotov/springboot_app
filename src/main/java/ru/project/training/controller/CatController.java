@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.project.training.entity.Cat;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Cat;
 import ru.project.training.service.CatService;
 
 import java.util.List;

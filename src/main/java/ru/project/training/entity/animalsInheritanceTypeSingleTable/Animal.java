@@ -1,4 +1,4 @@
-package ru.project.training.entity;
+package ru.project.training.entity.animalsInheritanceTypeSingleTable;
 
 import lombok.Getter;
 import lombok.Setter;

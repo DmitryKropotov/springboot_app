@@ -22,8 +22,8 @@ public class Student extends Auditable<String> {
     private Integer id;
     @Column(name = "name")
     private String name;
-    @OneToMany(targetEntity = Food.class, mappedBy = "studentId")
-    @Fetch(FetchMode.SELECT)
+    @OneToMany(targetEntity = Food.class, fetch = FetchType.EAGER, mappedBy = "studentId")
+    //@Fetch(FetchMode.SELECT)
     @BatchSize(size = 1)
     private List<Food> food;
 }

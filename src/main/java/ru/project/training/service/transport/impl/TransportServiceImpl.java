@@ -2,7 +2,7 @@ package ru.project.training.service.transport.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.project.training.entity.transport.Transport;
+import ru.project.training.entity.transportInheritanceTablePerClass.Transport;
 import ru.project.training.repository.transport.TransportRepository;
 import ru.project.training.service.transport.TransportService;
 

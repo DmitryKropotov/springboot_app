@@ -1,4 +1,4 @@
-package ru.project.training.entity.cars;
+package ru.project.training.entity.carsMappedSuperClass;
 
 import lombok.Getter;
 import lombok.Setter;

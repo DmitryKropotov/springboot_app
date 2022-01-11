@@ -1,7 +1,9 @@
-package ru.project.training.entity;
+package ru.project.training.entity.animalsInheritanceTypeSingleTable;
 
 import lombok.Getter;
 import lombok.Setter;
+import ru.project.training.entity.Student;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Animal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

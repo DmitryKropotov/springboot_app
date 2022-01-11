@@ -1,4 +1,4 @@
-package ru.project.training.entity.transport;
+package ru.project.training.entity.transportInheritanceTablePerClass;
 
 import lombok.Getter;
 import lombok.Setter;

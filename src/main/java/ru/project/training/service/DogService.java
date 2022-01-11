@@ -1,6 +1,6 @@
 package ru.project.training.service;
 
-import ru.project.training.entity.Dog;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Dog;
 
 import java.util.List;
 

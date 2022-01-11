@@ -7,8 +7,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
-import ru.project.training.entity.Animal;
-import ru.project.training.entity.Cat;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Animal;
+import ru.project.training.entity.animalsInheritanceTypeSingleTable.Cat;
 import ru.project.training.java11.RequestMaker;
 
 import java.net.URI;

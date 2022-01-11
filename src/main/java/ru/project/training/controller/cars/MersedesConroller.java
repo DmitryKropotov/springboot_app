@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.project.training.entity.cars.Mersedes;
+import ru.project.training.entity.carsMappedSuperClass.Mersedes;
 import ru.project.training.service.cars.MersedesService;
 
 import java.util.List;

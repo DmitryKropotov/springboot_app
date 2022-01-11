@@ -1,6 +1,6 @@
 package ru.project.training.service.transport;
 
-import ru.project.training.entity.transport.Transport;
+import ru.project.training.entity.transportInheritanceTablePerClass.Transport;
 
 import java.util.List;
 
